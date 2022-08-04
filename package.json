@@ -1,0 +1,31 @@
+{
+  "name": "7.3",
+  "version": "1.0.0",
+  "description": "jest test",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest --collectCoverage",
+    "coverage": "jest --collectCoverage"
+  },
+  "keywords": [
+    "jest",
+    "test",
+    "jsaqa",
+    "coverage"
+  ],
+  "author": "omelnikova",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  },
+    "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!**/node_modules/**",
+    "!**/coverage/**"
+  ],
+  "coverageThreshold": {
+        "branches" :100,
+        "functions" :100,
+        "lines" :100
+  }
+}
